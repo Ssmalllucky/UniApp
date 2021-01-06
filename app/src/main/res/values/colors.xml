@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common colors defined, start -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="C1F000000">#1F000000</color>
+    <!-- Common colors defined, end -->
+
+    <color name="vertical_bar">#5C5C5C</color>
+    <color name="CC6C6C6">#C6C6C6</color>
+    <color name="theme_color_blue">#3FF44040</color>
+    <color name="theme_color_blue_hover">#FF2B77D7</color>
+    <color name="divider_line">#D8D8D8</color>
+    <color name="base_background">#EEEFEF</color>
+    <color name="CF44040">#F44040</color>
+    <color name="text_color">#333333</color>
+    <color name="text_summary_color">#9B9B9B</color>
+    <color name="C452B83E4">#452b83e4</color>
+    <color name="C1A2B83E4">#1a2b83e4</color>
+    <color name="C3189EA">#3189EA</color>
+    <color name="CDEDEDE">#DEDEDE</color>
+    <color name="text_color_hint">#999999</color>
+    <color name="CFF7272">#FF7272</color>
+    <color name="CFFBB00">#FFBB00</color>
+    <color name="line_color">#E9E9E9</color>
+    <color name="black_six_percent">#99000000</color>
+    <color name="black_1f_percent">#22000000</color>
+    <color name="CF2F5F6">#F2F5F6</color>
+    <color name="C22A7ED">#22A7ED</color>
+    <color name="CF5F6F6">#F5F6F6</color>
+    <color name="C1F2B83E4">#1A2B83E4</color>
+    <color name="C6F2B83E4">#6F2B83E4</color>
+    <color name="CEEEEEE">#EEEEEE</color>
+    <color name="C5B8FF9">#5B8FF9</color>
+    <color name="C5AD8A6">#5AD8A6</color>
+    <color name="C5D7092">#5D7092</color>
+    <color name="CF3BE1F">#F3BE1F</color>
+    <color name="C0F268AF9">#0F268AF9</color>
+    <color name="C2B7EDF">#2B7EDF</color>
+</resources>
