@@ -31,10 +31,16 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    sourceSets.main {
+        jni.srcDirs = []
+        jniLibs.srcDir "src/main/jniLibs"
+    }
 }
 
 dependencies {
 
+    implementation fileTree(include: ['*.jar','*.aar'], dir: 'libs')
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.2.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
@@ -45,4 +51,15 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     implementation 'com.github.GrenderG:Toasty:1.4.2'
+
+    implementation 'com.aliyun.video.android:svideopro:3.18.0'//短视频专业版SDK必须依赖
+    implementation 'com.aliyun.video.android:core:1.2.2' //核心库必须依赖
+    implementation  'com.alivc.conan:AlivcConan:1.0.3'//核心库必须依赖
+    implementation  'com.aliyun.video.android:AlivcFFmpeg:2.0.0'//必须依赖
+    implementation  'com.aliyun.video.android:upload:1.6.0'// 上传库,如不需要上传可不依赖
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.2.0'
+    implementation 'com.aliyun.dpa:oss-android-sdk:+'
+
+    implementation project(":AliyunSvideoLibrary")
 }

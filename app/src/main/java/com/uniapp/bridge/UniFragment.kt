@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebView
 import androidx.fragment.app.Fragment
+import com.uniapp.bridge.base.UrlConfig
 import kotlinx.android.synthetic.main.f_webview.*
 import java.lang.StringBuilder
 
@@ -45,12 +46,12 @@ class UniFragment : Fragment() {
     }
 
     private fun buildUrl() {
-        val url = with(StringBuilder()) {
-            append(mLocalUrlPrefix)
-            append(mLocalUrlFileName)
-            toString()
-        }
-        mWebView.loadUrl(url)
+//        val url = with(StringBuilder()) {
+//            append(mLocalUrlPrefix)
+//            append(mLocalUrlFileName)
+//            toString()
+//        }
+        mWebView.loadUrl(UrlConfig.BASE_URL)
     }
 
     internal fun canGoBack(): Boolean {

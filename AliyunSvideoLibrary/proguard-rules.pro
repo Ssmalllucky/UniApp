@@ -19,11 +19,3 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
-
-######################短视频混淆配置#########################
--keep class com.aliyun.**{*;}
--keep class com.duanqu.**{*;}
--keep class com.qu.**{*;}
--keep class com.alibaba.**{*;}
--keep class component.alivc.**{*;}
--keep class com.alivc.**{*;}
