@@ -1,6 +1,8 @@
 package com.uniapp.bridge
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import kotlinx.android.synthetic.main.aty_capture.*
 
@@ -51,5 +53,13 @@ class CaptureAty : BaseAty() {
         pictureBtn.compoundDrawablePadding = 8
 
         captureSelectLl.addView(pictureBtn)
+    }
+
+    fun goToPublish(view: View) {
+        val intent = with(Intent()) {
+            putExtra("videoUrl", "https://www.baidu.com/")
+            setClass(this@CaptureAty, PublishAty::class.java)
+        }
+        startActivity(intent)
     }
 }

@@ -36,6 +36,11 @@ android {
         jni.srcDirs = []
         jniLibs.srcDir "src/main/jniLibs"
     }
+
+    packagingOptions {
+        exclude 'classes.dex'
+        exclude '**.**'
+    }
 }
 
 dependencies {

@@ -1,16 +1,16 @@
 package com.uniapp.bridge
 
-import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentActivity
 
 object ActivityController {
 
-    private val mActivities = ArrayList<AppCompatActivity>()
+    private val mActivities = ArrayList<FragmentActivity>()
 
-    fun add(a: AppCompatActivity) {
+    fun add(a: FragmentActivity) {
         mActivities.add(a)
     }
 
-    fun remove(a: AppCompatActivity) {
+    fun remove(a: FragmentActivity) {
         mActivities.remove(a)
     }
 

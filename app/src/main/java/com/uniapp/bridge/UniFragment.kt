@@ -35,7 +35,7 @@ class UniFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        mController = UniController()
+        mController = UniController(this)
         mController.create(mWebView)
 
         buildUrl()

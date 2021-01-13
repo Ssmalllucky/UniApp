@@ -2,10 +2,10 @@ package com.uniapp.bridge
 
 import android.os.Bundle
 import android.view.KeyEvent
-import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentActivity
 import es.dmoral.toasty.Toasty
 
-class UniAty : AppCompatActivity() {
+class UniAty : FragmentActivity() {
 
     private var mLastClickTime = 0L
     private val mClickInterval = 1000
@@ -13,7 +13,6 @@ class UniAty : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         ActivityController.add(this)
-
         setContentView(R.layout.aty_uni)
     }
 
@@ -42,7 +41,6 @@ class UniAty : AppCompatActivity() {
     }
 
     fun caoGoBack(): Boolean {
-
         val mChildFragment = getFragment()
         return mChildFragment?.run {
             return mChildFragment.canGoBack()
